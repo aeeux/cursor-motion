@@ -1,0 +1,53 @@
+{
+  "name": "@aeeriksen/cursor-motion",
+  "version": "0.0.1",
+  "description": "An incredibly fast and beautiful cursor",
+  "scripts": {
+    "rollup": "rollup -c",
+    "build": "tsc",
+    "postinstall": "node ./generate-settings.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeeux"
+  },
+  "keywords": [
+    "react",
+    "cursor",
+    "motion",
+    "mouse",
+    "component",
+    "animations",
+    "framer-motion"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/react": "18.2.2",
+    "react": "18.2.0",
+    "rollup": "^3.21.6",
+    "rollup-plugin-dts": "^5.3.0",
+    "tslib": "^2.5.0",
+    "typescript": "5.0.4"
+  },
+  "author": "Andreas Erik Eriksen",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.2",
+    "@types/react-dom": "18.2.3",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.4",
+    "framer-motion": "^10.12.7",
+    "react-dom": "18.2.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "generate-settings.js"
+  ],
+  "types": "dist/index.d.ts"
+}
